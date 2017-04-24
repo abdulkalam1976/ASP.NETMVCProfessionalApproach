@@ -1,0 +1,30 @@
+﻿@model IEnumerable<MvcPaging.Models.Designation>
+
+<h2>Designation Information</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Code")
+        </th>
+        <th>
+            @Html.DisplayName("Description")
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+    </tr>
+}
+
+</table>
+
+<br />
+@Html.Partial("~/Views/Shared/_Paging.cshtml", Model)
