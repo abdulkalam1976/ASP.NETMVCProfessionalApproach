@@ -10,4 +10,4 @@ The difference in 2 views is that there will be many situation where view name c
 
 All conditions are wrapped up in this small apps. 
 
-You must have Background of MVC, Entity Framework, Sql Server
+You must have Background of C#, MVC, Entity Framework, Sql Server
